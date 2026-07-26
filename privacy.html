@@ -52,10 +52,10 @@
 
 <article><div class="wrap">
   <h1>개인정보처리방침</h1>
-  <p class="meta">앱: hkeyboard · 버전 0.1.0 · 시행일 2026년 7월 22일</p>
+  <p class="meta">앱: hkeyboard · 버전 1.0.0 · 시행일 2026년 7월 22일</p>
 
   <div class="callout">
-    <strong>요약.</strong> hkeyboard는 어떤 개인정보도 수집·저장·전송하지 않습니다. 앱과 키보드에는 네트워크 통신 코드 자체가 없으며, 입력한 내용·설정·사용 통계는 전부 사용자의 기기 안에만 머뭅니다. 서버도, 분석 도구도, 광고·추적도 없습니다. <span class="muted">(v0.1.0 기준)</span>
+    <strong>요약.</strong> hkeyboard는 어떤 개인정보도 수집·저장·전송하지 않습니다. 앱과 키보드에는 네트워크 통신 코드 자체가 없으며, 입력한 내용·설정·사용 통계는 전부 사용자의 기기 안에만 머뭅니다. 서버도, 분석 도구도, 광고·추적도 없습니다. <span class="muted">(v1.0.0 기준)</span>
   </div>
 
   <h2>1. 우리는 무엇을 수집하나요</h2>
@@ -66,10 +66,18 @@
   <table>
     <tr><th>항목</th><th>저장 위치</th><th>용도</th></tr>
     <tr><td>테마·조명·소리·진동 등 설정</td><td>기기 로컬 및 앱 그룹 컨테이너</td><td>키보드 모양과 동작을 사용자 취향대로 유지</td></tr>
-    <tr><td>단축문장·즐겨찾기 퀵워드</td><td>앱이 앱 그룹에 기록 → 키보드가 읽음</td><td>등록한 문구·단어를 키보드에서 꺼내 쓰기 위함</td></tr>
-    <tr><td>퀵워드 사용 빈도 통계</td><td>키보드 확장 자체 컨테이너(기기 로컬)</td><td>자주 쓰는 단어를 앞에 정렬(frecency). 기기 안에서만 계산</td></tr>
+    <tr><td>단축문장</td><td>앱이 앱 그룹에 기록 → 키보드가 읽음</td><td>등록한 문구를 키보드에서 꺼내 쓰기 위함</td></tr>
+    <tr><td>학습된 추천 단어</td><td>키보드 확장 자체 컨테이너(기기 로컬)</td><td>하단 추천 바에서 자주 쓰는 단어를 먼저 보여주기 위함</td></tr>
+    <tr><td>맞춤 터치 보정 결과</td><td>앱이 앱 그룹에 기록 → 키보드가 읽음</td><td>키 경계를 손버릇에 맞게 조정. 좌표 값만 담기며 글자는 담기지 않음</td></tr>
   </table>
-  <p class="muted">이 데이터는 앱을 삭제하면 함께 제거됩니다. 설정에서 통계 수집을 끄거나 초기화할 수 있습니다.</p>
+  <h3>학습된 추천 단어에 대해</h3>
+  <p>하단 바의 추천 단어를 켜 두면, 어절이 끝날 때(스페이스) 그 단어와 사용 횟수가 기기 안에 기록됩니다. 문장이나 순서, 시각은 기록하지 않으며 최대 400개까지만 유지됩니다. 다음은 <strong>기록하지 않습니다</strong>.</p>
+  <ul>
+    <li>숫자·기호가 섞인 문자열 — 이메일 주소, 카드번호, 주문번호, 인증코드 등</li>
+    <li>숫자 키패드, 전화번호, 이메일, 인증코드, 카드번호 입력란에서 친 모든 것</li>
+    <li>하단 바의 추천 단어를 꺼 둔 동안 친 모든 것</li>
+  </ul>
+  <p class="muted">이 데이터는 앱을 삭제하면 함께 제거됩니다. <strong>설정 &gt; 추천 단어 초기화</strong>에서 언제든 지울 수 있으며, 삭제는 키보드를 다음에 열 때 반영됩니다(앱은 키보드 확장의 저장 공간에 직접 접근할 수 없습니다).</p>
 
   <h2>3. 네트워크 · 분석 · 추적</h2>
   <ul>
@@ -80,7 +88,7 @@
   </ul>
 
   <h2>4. 전체 접근 허용(Full Access)</h2>
-  <p>hkeyboard의 전체 접근 허용은 <strong>선택 사항</strong>입니다. 켜지 않아도 한/영 입력, 제스처 퀵액션, 퀵워드, 단축문장, 테마·조명 등 핵심 기능이 모두 정상 동작합니다.</p>
+  <p>hkeyboard의 전체 접근 허용은 <strong>선택 사항</strong>입니다. 켜지 않아도 한/영 입력, 제스처 퀵액션, 추천 단어, 단축문장, 테마·조명 등 핵심 기능이 모두 정상 동작합니다.</p>
   <p>전체 접근을 켜면 다음 세 가지에만 사용됩니다.</p>
   <ul>
     <li><strong>키 사운드</strong> — 타건 소리 재생</li>
@@ -105,10 +113,10 @@
 
   <div class="en">
     <h2>Privacy Policy (English summary)</h2>
-    <p class="meta">hkeyboard · version 0.1.0 · Effective July 22, 2026</p>
+    <p class="meta">hkeyboard · version 1.0.0 · Effective July 22, 2026</p>
     <p>hkeyboard collects <strong>no personal data</strong>. The app and its keyboard extension contain <strong>no networking code</strong> — nothing you type, no settings, and no usage statistics ever leave your device. There are no servers, no analytics, no advertising, and no tracking.</p>
     <h3>Stored locally only</h3>
-    <p>Settings, saved shortcuts/favorites, and quick-word frequency stats are stored on your device only (the app writes to the App Group container; the keyboard reads it, and computes its own quick-word stats in the extension's local container). Deleting the app removes them.</p>
+    <p>Settings, saved shortcuts, and touch-calibration geometry are stored on your device only (the app writes to the App Group container; the keyboard reads it). When the suggestion bar is on, the keyboard also keeps a count of words you finish typing, in its own local container — words and counts only, never sentences, order, or timestamps, capped at 400 entries. Strings containing digits or symbols are never kept, and nothing is recorded in numeric, phone, email, one-time-code, or card-number fields. Deleting the app removes all of it; <b>설정 &gt; 추천 단어 초기화</b> clears the learned words, taking effect the next time the keyboard opens.</p>
     <h3>Full Access is optional</h3>
     <p>hkeyboard works fully with Full Access off. When enabled, it is used only for key sound, haptics, and clipboard copy/paste — never to collect or transmit data of any kind.</p>
     <h3>Secure fields</h3>
