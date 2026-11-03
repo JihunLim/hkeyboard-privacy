@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개인정보처리방침 · hkeyboard</title>
-<meta name="description" content="hkeyboard 개인정보처리방침 — 데이터 수집 없음, 네트워크 전송 없음, 전부 기기 안에서만.">
+<meta name="description" content="hkeyboard는 개인정보를 수집하지 않습니다. 서버·네트워크 코드·분석·추적이 없고, 입력한 글자는 저장되지도 전송되지도 않습니다.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%8C%A8%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <style>
   :root{--bg:#f7f7fb;--panel:#fff;--ink:#15151c;--muted:#5c5c6b;--line:#e6e6ef;--brand:#6a5cff;--rgb:linear-gradient(90deg,#ff4d6d,#ff8a3d,#ffd23d,#33d17a,#3db6ff,#6a5cff,#c15cff)}
@@ -34,6 +34,10 @@
   li{margin:5px 0}
   .callout{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:12px;padding:18px 20px;margin:22px 0}
   .callout strong{color:var(--ink)}
+  .callout .lead{display:block;font-size:1.22rem;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .tag{border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.88rem;color:var(--muted);background:var(--bg)}
+  .tag b{color:var(--ink)}
   table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem;display:block;overflow-x:auto}
   th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
   th{background:var(--panel);font-weight:700}
@@ -52,77 +56,86 @@
 
 <article><div class="wrap">
   <h1>개인정보처리방침</h1>
-  <p class="meta">앱: hkeyboard · 버전 1.0.0 · 시행일 2026년 7월 22일</p>
+  <p class="meta">앱: hkeyboard · 버전 1.0.0 · 시행일 2026년 11월 3일</p>
 
   <div class="callout">
-    <strong>요약.</strong> hkeyboard는 어떤 개인정보도 수집·저장·전송하지 않습니다. 앱과 키보드에는 네트워크 통신 코드 자체가 없으며, 입력한 내용·설정·사용 통계는 전부 사용자의 기기 안에만 머뭅니다. 서버도, 분석 도구도, 광고·추적도 없습니다. <span class="muted">(v1.0.0 기준)</span>
+    <strong class="lead">hkeyboard는 개인정보를 수집하지 않습니다.</strong>
+    서버가 없고, 앱과 키보드에는 네트워크 통신 코드가 없습니다. 분석·광고·추적 도구도 없습니다. 키보드로 입력한 글자는 저장되지도, 전송되지도 않습니다. 모든 것은 이 기기 안에서만 처리됩니다.
+    <div class="tags">
+      <span class="tag"><b>수집 정보</b> 없음</span>
+      <span class="tag"><b>네트워크 통신</b> 없음</span>
+      <span class="tag"><b>입력 내용 저장·전송</b> 없음</span>
+      <span class="tag"><b>분석·광고·추적</b> 없음</span>
+    </div>
   </div>
 
-  <h2>1. 우리는 무엇을 수집하나요</h2>
-  <p>아무것도 수집하지 않습니다. hkeyboard는 사용자를 식별할 수 있는 정보, 입력한 텍스트, 연락처, 위치, 광고 식별자 등 그 어떤 데이터도 수집하거나 외부로 전송하지 않습니다. 앱과 키보드 확장(extension) 코드에는 네트워크 요청을 보내는 부분이 존재하지 않습니다.</p>
+  <h2>1. 수집하는 정보: 없음</h2>
+  <p>이름·이메일·기기 식별자·광고 식별자(IDFA)·위치·연락처·입력 내용·사용 통계 등 어떤 정보도 수집하지 않습니다. 계정과 회원가입이 없고, 모으는 정보가 없으니 제3자에게 제공하거나 맡기는 정보도 없습니다.</p>
 
-  <h2>2. 기기 안에만 저장되는 것</h2>
-  <p>키보드가 제대로 동작하려면 몇 가지 값을 로컬에 보관해야 합니다. 이 값들은 모두 사용자의 기기를 벗어나지 않습니다.</p>
+  <h2>2. 입력한 내용</h2>
+  <ul>
+    <li>키보드로 친 글자는 입력란에 바로 들어갈 뿐, 파일·로그·설정 어디에도 기록되지 않습니다.</li>
+    <li>한글 조합과 커서 이동에 필요한 커서 앞뒤 글자는 메모리에서만 잠깐 쓰고 버립니다. 트랙패드는 손을 뗀 직후, 나머지는 다음 입력이나 키보드를 내릴 때입니다.</li>
+    <li>추천 단어·단어 학습·자동 수정 기능이 없어, 입력 내용을 익히거나 모으지 않습니다.</li>
+    <li>암호 같은 보안 입력란에서는 iOS가 시스템 키보드로 바꾸므로, 그 입력은 hkeyboard를 거치지 않습니다.</li>
+  </ul>
+
+  <h2>3. 기기 안에만 저장되는 것</h2>
+  <p>사용자가 고르거나 적은 값과 사용법 안내를 봤는지만 이 기기에 저장됩니다. 어느 것도 기기 밖으로 나가지 않으며, 앱을 삭제하면 함께 지워집니다.</p>
   <table>
-    <tr><th>항목</th><th>저장 위치</th><th>용도</th></tr>
-    <tr><td>테마·조명·소리·진동 등 설정</td><td>기기 로컬 및 앱 그룹 컨테이너</td><td>키보드 모양과 동작을 사용자 취향대로 유지</td></tr>
-    <tr><td>단축문장</td><td>앱이 앱 그룹에 기록 → 키보드가 읽음</td><td>등록한 문구를 키보드에서 꺼내 쓰기 위함</td></tr>
-    <tr><td>학습된 추천 단어</td><td>키보드 확장 자체 컨테이너(기기 로컬)</td><td>하단 추천 바에서 자주 쓰는 단어를 먼저 보여주기 위함</td></tr>
-    <tr><td>맞춤 터치 보정 결과</td><td>앱이 앱 그룹에 기록 → 키보드가 읽음</td><td>키 경계를 손버릇에 맞게 조정. 좌표 값만 담기며 글자는 담기지 않음</td></tr>
+    <tr><th>항목</th><th>저장 위치</th><th>내용</th></tr>
+    <tr><td>키보드 설정</td><td>앱 그룹 (앱이 쓰고 키보드가 읽음)</td><td>테마·포인트 키캡·글자 크기·조명·소리·햅틱·레이아웃·입력 옵션</td></tr>
+    <tr><td>퀵액션</td><td>앱 그룹</td><td>제스처마다 연결한 동작</td></tr>
+    <tr><td>단축문장</td><td>앱 그룹</td><td>사용자가 직접 등록한 문구</td></tr>
+    <tr><td>스페이스 문구</td><td>앱 그룹</td><td>스페이스바에 새기는 20자 이내 문구</td></tr>
+    <tr><td>자판 분리 선택</td><td>키보드 자체 저장 공간</td><td>iPhone Duo 안쪽 화면의 붙음/나뉨 값 하나</td></tr>
+    <tr><td>사용법 안내</td><td>앱 자체 저장 공간</td><td>첫 실행 안내를 봤는지 여부</td></tr>
   </table>
-  <h3>학습된 추천 단어에 대해</h3>
-  <p>하단 바의 추천 단어를 켜 두면, 어절이 끝날 때(스페이스) 그 단어와 사용 횟수가 기기 안에 기록됩니다. 문장이나 순서, 시각은 기록하지 않으며 최대 400개까지만 유지됩니다. 다음은 <strong>기록하지 않습니다</strong>.</p>
-  <ul>
-    <li>숫자·기호가 섞인 문자열 — 이메일 주소, 카드번호, 주문번호, 인증코드 등</li>
-    <li>숫자 키패드, 전화번호, 이메일, 인증코드, 카드번호 입력란에서 친 모든 것</li>
-    <li>하단 바의 추천 단어를 꺼 둔 동안 친 모든 것</li>
-  </ul>
-  <p class="muted">이 데이터는 앱을 삭제하면 함께 제거됩니다. <strong>설정 &gt; 추천 단어 초기화</strong>에서 언제든 지울 수 있으며, 삭제는 키보드를 다음에 열 때 반영됩니다(앱은 키보드 확장의 저장 공간에 직접 접근할 수 없습니다).</p>
 
-  <h2>3. 네트워크 · 분석 · 추적</h2>
+  <h2>4. 네트워크 · 분석 · 추적: 없음</h2>
   <ul>
-    <li>네트워크 전송: <strong>없음.</strong> 서버로 보내는 데이터가 없습니다.</li>
-    <li>분석(analytics)·크래시 리포팅: <strong>없음.</strong></li>
-    <li>광고·추적 SDK, 광고 식별자(IDFA): <strong>사용하지 않음.</strong></li>
-    <li>제3자 데이터 공유: <strong>없음</strong> (공유할 데이터 자체가 없습니다).</li>
+    <li><strong>네트워크 통신 없음.</strong> 앱과 키보드에 인터넷에 연결하는 코드가 없습니다.</li>
+    <li><strong>외부 SDK 없음.</strong> 분석·크래시 리포트·광고 라이브러리를 쓰지 않습니다.</li>
+    <li><strong>추적 없음.</strong> 광고 식별자를 쓰지 않고, 다른 앱이나 웹사이트에서의 활동을 추적하지 않습니다.</li>
   </ul>
 
-  <h2>4. 전체 접근 허용(Full Access)</h2>
-  <p>hkeyboard의 전체 접근 허용은 <strong>선택 사항</strong>입니다. 켜지 않아도 한/영 입력, 제스처 퀵액션, 추천 단어, 단축문장, 테마·조명 등 핵심 기능이 모두 정상 동작합니다.</p>
-  <p>전체 접근을 켜면 다음 세 가지에만 사용됩니다.</p>
+  <h2>5. 전체 접근 허용 (선택)</h2>
+  <p>켜지 않아도 한/영 입력, 퀵액션, 단축문장, Fn 기호, 스페이스 트랙패드, 테마·조명 등 모든 핵심 기능이 동작합니다. 켜면 다음 세 가지에만 쓰입니다.</p>
   <ul>
-    <li><strong>키 사운드</strong> — 타건 소리 재생</li>
-    <li><strong>햅틱(진동)</strong> — 타건 진동 피드백</li>
-    <li><strong>클립보드 복사·붙여넣기</strong> — 퀵액션의 복사/붙여넣기 동작</li>
+    <li><strong>키 사운드</strong></li>
+    <li><strong>햅틱 진동</strong></li>
+    <li><strong>클립보드</strong> — 복사·붙여넣기 퀵액션(기본 C·V)을 그릴 때만 클립보드를 쓰거나 읽습니다. 그 밖에는 클립보드를 보지 않습니다.</li>
   </ul>
-  <p>전체 접근을 켜더라도 위 용도로만 시스템 기능을 이용할 뿐이며, 클립보드 내용을 포함해 어떤 데이터도 수집하거나 외부로 전송하지 않습니다.</p>
+  <p>전체 접근을 켜도 어떤 데이터도 수집하거나 외부로 보내지 않습니다.</p>
 
-  <h2>5. 암호 및 보안 입력 필드</h2>
-  <p>iOS는 암호 필드 등 보안 입력에서 서드파티 키보드를 자동으로 시스템 키보드로 전환합니다. 이런 필드에서는 hkeyboard가 동작하지 않으며, 해당 입력은 애초에 우리 키보드를 거치지 않습니다.</p>
+  <h2>6. 권한</h2>
+  <p>마이크·카메라·위치·연락처·사진에 접근하지 않으며, 이런 권한을 요청하지 않습니다.</p>
 
-  <h2>6. 아동</h2>
-  <p>hkeyboard는 아동을 포함한 누구로부터도 개인정보를 수집하지 않습니다.</p>
+  <h2>7. 아동</h2>
+  <p>hkeyboard는 아동을 포함해 누구의 개인정보도 수집하지 않습니다.</p>
 
-  <h2>7. 변경 고지</h2>
-  <p>방침이 바뀌면 이 페이지와 앱 버전을 통해 갱신 날짜와 함께 안내합니다. 향후 버전에서 동작이 달라질 경우 해당 버전 기준으로 명시합니다.</p>
+  <h2>8. 변경 고지</h2>
+  <p>방침이 바뀌면 이 페이지에 새 시행일과 함께 알립니다. 앞으로 동작이 달라지는 버전이 나오면 그 버전을 기준으로 적습니다.</p>
 
-  <h2>8. 문의</h2>
-  <p>개인정보 관련 문의: <a href="mailto:jihunlim204@gmail.com">jihunlim204@gmail.com</a></p>
+  <h2>9. 문의</h2>
+  <p><a href="mailto:jihunlim204@gmail.com">jihunlim204@gmail.com</a></p>
 
   <hr>
 
   <div class="en">
     <h2>Privacy Policy (English summary)</h2>
-    <p class="meta">hkeyboard · version 1.0.0 · Effective July 22, 2026</p>
-    <p>hkeyboard collects <strong>no personal data</strong>. The app and its keyboard extension contain <strong>no networking code</strong> — nothing you type, no settings, and no usage statistics ever leave your device. There are no servers, no analytics, no advertising, and no tracking.</p>
-    <h3>Stored locally only</h3>
-    <p>Settings, saved shortcuts, and touch-calibration geometry are stored on your device only (the app writes to the App Group container; the keyboard reads it). When the suggestion bar is on, the keyboard also keeps a count of words you finish typing, in its own local container — words and counts only, never sentences, order, or timestamps, capped at 400 entries. Strings containing digits or symbols are never kept, and nothing is recorded in numeric, phone, email, one-time-code, or card-number fields. Deleting the app removes all of it; <b>설정 &gt; 추천 단어 초기화</b> clears the learned words, taking effect the next time the keyboard opens.</p>
+    <p class="meta">hkeyboard · version 1.0.0 · Effective November 3, 2026</p>
+    <p><strong>hkeyboard does not collect any personal information.</strong> There are no servers, and the app and its keyboard contain no networking code. There are no analytics, ads, or tracking. Nothing you type is stored or sent anywhere; everything stays on your device.</p>
+    <h3>What you type</h3>
+    <p>Keystrokes go straight into the text field and are never written to a file, log, or setting. The few characters around the cursor that Hangul composition and cursor movement need are held in memory only and dropped right after: when the trackpad gesture ends, at the next edit, or when the keyboard closes. There are no suggestions, no word learning, and no autocorrect.</p>
+    <h3>Stored on this device only</h3>
+    <p>Only what you choose or write: keyboard settings, quick-action mapping, your shortcuts, the space-bar caption, and the iPhone Duo split-board choice, plus whether you have seen the guide. Deleting the app removes all of it.</p>
     <h3>Full Access is optional</h3>
-    <p>hkeyboard works fully with Full Access off. When enabled, it is used only for key sound, haptics, and clipboard copy/paste — never to collect or transmit data of any kind.</p>
-    <h3>Secure fields</h3>
-    <p>iOS switches to the system keyboard for password and secure fields; hkeyboard never handles that input.</p>
+    <p>Every core feature works with it off. When on, it is used only for key sound, haptics, and the clipboard, which is read or written only when you draw the copy or paste quick action. Nothing is collected or transmitted either way.</p>
+    <h3>Permissions</h3>
+    <p>No microphone, camera, location, contacts, or photos.</p>
     <h3>Contact</h3>
-    <p>Questions: <a href="mailto:jihunlim204@gmail.com">jihunlim204@gmail.com</a></p>
+    <p><a href="mailto:jihunlim204@gmail.com">jihunlim204@gmail.com</a></p>
   </div>
 </div></article>
 
